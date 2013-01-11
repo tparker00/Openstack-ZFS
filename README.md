@@ -7,20 +7,12 @@ Based off of work from David Douard in the following blog post. http://www.logil
 
 To install copy zol.py to /usr/share/pyshared/cinder/volume and make the following changes to /etc/cinder/cinder.conf
 
-volume_driver=cinder.volume.zol.ZFSonLinuxISCSIDriver
-
-volume_group=<zvol_path> 
-
-iscsi_ip_prefix=<ip_prefix>
-
-iscsi_ip_address=<cinder_ip>
-
-san_thin_provision=false
-
-san_ip=<cinder_ip>
-
-san_zfs_volume_base=<zvol_path>
-
-san_is_local=true
-
-use_cow_images=false
+volume\_driver=cinder.volume.zol.ZFSonLinuxISCSIDriver
+volume\_group=\<zvol\_path\> 
+iscsi\_ip\_prefix=\<ip\_prefix\>
+iscsi\_ip\_address=\<cinder\_ip\>
+san\_thin\_provision=false
+san\_ip=\<cinder\_ip\>
+san\_zfs\_volume\_base=\<zvol\_path\>
+san\_is\_local=true
+use\_cow\_images=false
