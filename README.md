@@ -15,4 +15,8 @@ san\_thin\_provision=false
 san\_ip=\<cinder\_ip\>  
 san\_zfs\_volume\_base=\<zvol\_path\>  
 san\_is\_local=true  
-use\_cow\_images=false
+use\_cow\_images=false  
+
+/etc/cinder/rootwrap.d/volume.filters needs the following line added as well  
+zfs: CommandFilter, /sbin/zfs, root
+
